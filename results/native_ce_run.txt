@@ -1,0 +1,132 @@
+$ ./target/client/x86_64-linux/PerfFX 
+Main
+System properties:
+{java.specification.version=11, prism.marlin.doStats=false, org.graalvm.nativeimage.kind=shared, sun.jnu.encoding=UTF-8, java.class.path=, user.name=bourgesl, path.separator=:, java.vm.vendor=Oracle Corporation, os.version=4.15.0-76-generic, java.endorsed.dirs=, file.encoding=UTF-8, java.vendor.url=https://www.graalvm.org/, prism.verbose=true, javafx.animation.fullspeed=true, prism.marlin.log=true, java.vm.name=Substrate VM, java.vm.specification.version=11, os.name=Linux, jdk.lang.Process.launchMechanism=FORK, java.io.tmpdir=/var/tmp/, java.version=11.0.6, user.home=/home/bourgesl, user.dir=/home/marlin/branches/perfFX, os.arch=amd64, java.specification.vendor=Oracle Corporation, java.vm.specification.name=Java Virtual Machine Specification, org.graalvm.nativeimage.imagecode=runtime, file.separator=/, line.separator=
+, java.library.path=, java.vendor=Oracle Corporation, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.vm.version=GraalVM 19.3.1 CE, javafx.verbose=true, java.ext.dirs=, prism.marlin.useRef=hard, java.class.version=55.0}
+Prism pipeline init order: es2 sw 
+Using Double Precision Marlin Rasterizer
+Using dirty region optimizations
+Not using texture mask for primitives
+Not forcing power of 2 sizes for textures
+Using hardware CLAMP_TO_ZERO mode
+Opting in for HiDPI pixel scaling
+Prism pipeline name = com.sun.prism.es2.ES2Pipeline
+Loading ES2 native library ... prism_es2
+WARNING: java.lang.UnsatisfiedLinkError
+System.loadLibrary(prism_es2) succeeded
+	succeeded.
+GLFactory using com.sun.prism.es2.X11GLFactory
+(X) Got class = class com.sun.prism.es2.ES2Pipeline
+Initialized prism pipeline: com.sun.prism.es2.ES2Pipeline
+JavaFX: using com.sun.javafx.tk.quantum.QuantumToolkit
+WARNING: java.lang.UnsatisfiedLinkError
+System.loadLibrary(glass) succeeded
+WARNING: java.lang.UnsatisfiedLinkError
+System.loadLibrary(glassgtk3) succeeded
+Maximum supported texture size: 16384
+Maximum texture size clamped to 4096
+Non power of two texture support = true
+Maximum number of vertex attributes = 16
+Maximum number of uniform vertex components = 4096
+Maximum number of uniform fragment components = 4096
+Maximum number of varying components = 124
+Maximum number of texture units usable in a vertex shader = 32
+Maximum number of texture units usable in a fragment shader = 32
+Graphics Vendor: NVIDIA Corporation
+       Renderer: Quadro M1000M/PCIe/SSE2
+        Version: 4.6.0 NVIDIA 440.59
+ vsync: false vpipe: true
+WARNING: java.lang.UnsatisfiedLinkError
+System.loadLibrary(javafx_font) succeeded
+WARNING: java.lang.UnsatisfiedLinkError
+System.loadLibrary(javafx_font_freetype) succeeded
+WARNING: java.lang.UnsatisfiedLinkError
+System.loadLibrary(javafx_font_pango) succeeded
+ES2ResourceFactory: Prism - createStockShader: FillPgram_Color.frag
+ES2ResourceFactory: Prism - createStockShader: FillPgram_LinearGradient_PAD.frag
+ES2ResourceFactory: Prism - createStockShader: Solid_TextureRGB.frag
+ES2ResourceFactory: Prism - createStockShader: Solid_TextureFirstPassLCD.frag
+ES2ResourceFactory: Prism - createStockShader: Solid_TextureSecondPassLCD.frag
+INFO: ===============================================================================
+INFO: Marlin software rasterizer    = ENABLED
+INFO: Version                       = [marlinFX-0.9.3.1-Unsafe-OpenJDK]
+INFO: prism.marlin                  = com.sun.marlin.DRenderer
+INFO: prism.marlin.useThreadLocal   = true
+INFO: prism.marlin.useRef           = hard
+INFO: prism.marlin.edges            = 4096
+INFO: prism.marlin.pixelWidth       = 4096
+INFO: prism.marlin.pixelHeight      = 2176
+INFO: prism.marlin.profile          = quality
+INFO: prism.marlin.subPixel_log2_X  = 8
+INFO: prism.marlin.subPixel_log2_Y  = 3
+INFO: prism.marlin.blockSize_log2   = 5
+INFO: prism.marlin.forceRLE         = false
+INFO: prism.marlin.forceNoRLE       = false
+INFO: prism.marlin.useTileFlags     = true
+INFO: prism.marlin.useTileFlags.useHeuristics = true
+INFO: prism.marlin.rleMinWidth      = 64
+INFO: prism.marlin.useSimplifier    = false
+INFO: prism.marlin.usePathSimplifier= false
+INFO: prism.marlin.pathSimplifier.pixTol = 0.125
+INFO: prism.marlin.clip             = true
+INFO: prism.marlin.clip.runtime.enable = false
+INFO: prism.marlin.clip.subdivider  = true
+INFO: prism.marlin.clip.subdivider.minLength = 100.0
+INFO: prism.marlin.doStats          = false
+INFO: prism.marlin.doMonitors       = false
+INFO: prism.marlin.doChecks         = false
+INFO: prism.marlin.log              = true
+INFO: prism.marlin.useLogger        = false
+INFO: prism.marlin.logCreateContext = false
+INFO: prism.marlin.logUnsafeMalloc  = false
+INFO: prism.marlin.curve_len_err    = 0.01
+INFO: prism.marlin.cubic_dec_d2     = 1.0
+INFO: prism.marlin.cubic_inc_d1     = 0.2
+INFO: prism.marlin.quad_dec_d2      = 0.5
+INFO: Renderer settings:
+INFO: CUB_DEC_BND  = 256.0
+INFO: CUB_INC_BND  = 51.20000076293945
+INFO: QUAD_DEC_BND = 128.0
+INFO: INITIAL_EDGES_CAPACITY        = 98304
+INFO: INITIAL_CROSSING_COUNT        = 1024
+INFO: ===============================================================================
+new alphas with length = 4096
+ES2ResourceFactory: Prism - createStockShader: Texture_Color.frag
+ES2ResourceFactory: Prism - createStockShader: Texture_LinearGradient_PAD.frag
+79.48
+129.23
+124.10
+116.85
+112.20
+110.92
+112.59
+119.96
+125.82
+137.16
+141.77
+137.81
+139.90
+130.05
+118.58
+119.98
+114.42
+111.40
+106.18
+110.93
+116.90
+124.51
+135.28
+138.95
+144.20
+138.12
+131.35
+122.28
+113.53
+106.76
+107.93
+113.91
+119.65
+130.66
+140.07
+149.99
+

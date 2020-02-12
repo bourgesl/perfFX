@@ -1,8 +1,8 @@
 $ ./target/client/x86_64-linux/PerfFX 
 Main
 System properties:
-{java.specification.version=11, prism.marlin.doStats=false, org.graalvm.nativeimage.kind=shared, sun.jnu.encoding=UTF-8, java.class.path=, user.name=bourgesl, path.separator=:, java.vm.vendor=Oracle Corporation, os.version=4.15.0-76-generic, java.endorsed.dirs=, file.encoding=UTF-8, java.vendor.url=https://www.graalvm.org/, prism.verbose=true, javafx.animation.fullspeed=true, prism.marlin.log=true, java.vm.name=Substrate VM, java.vm.specification.version=11, os.name=Linux, jdk.lang.Process.launchMechanism=FORK, java.io.tmpdir=/var/tmp/, java.version=11.0.6, user.home=/home/bourgesl, user.dir=/home/marlin/branches/perfFX.mine, os.arch=amd64, java.specification.vendor=Oracle Corporation, java.vm.specification.name=Java Virtual Machine Specification, org.graalvm.nativeimage.imagecode=runtime, file.separator=/, line.separator=
-, java.library.path=, java.vendor=Oracle Corporation, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.vm.version=GraalVM 19.3.1 CE, javafx.verbose=true, java.ext.dirs=, prism.marlin.useRef=hard, java.class.version=55.0}
+{java.specification.version=11, prism.marlin.doStats=false, org.graalvm.nativeimage.kind=shared, sun.jnu.encoding=UTF-8, java.class.path=, user.name=bourgesl, path.separator=:, java.vm.vendor=Oracle Corporation, os.version=4.15.0-76-generic, java.endorsed.dirs=, file.encoding=UTF-8, java.vendor.url=https://www.graalvm.org/, prism.verbose=true, javafx.animation.fullspeed=true, prism.marlin.log=true, java.vm.name=Substrate VM, java.vm.specification.version=11, os.name=Linux, jdk.lang.Process.launchMechanism=FORK, java.io.tmpdir=/var/tmp/, java.version=11.0.6, user.home=/home/bourgesl, user.dir=/home/marlin/branches/perfFX, os.arch=amd64, java.specification.vendor=Oracle Corporation, java.vm.specification.name=Java Virtual Machine Specification, org.graalvm.nativeimage.imagecode=runtime, file.separator=/, line.separator=
+, java.library.path=, java.vendor=Oracle Corporation, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, java.vm.version=GraalVM 19.3.1 EE, javafx.verbose=true, java.ext.dirs=, prism.marlin.useRef=hard, java.class.version=55.0}
 Prism pipeline init order: es2 sw 
 Using Double Precision Marlin Rasterizer
 Using dirty region optimizations
@@ -93,40 +93,40 @@ INFO: ==========================================================================
 new alphas with length = 4096
 ES2ResourceFactory: Prism - createStockShader: Texture_Color.frag
 ES2ResourceFactory: Prism - createStockShader: Texture_LinearGradient_PAD.frag
-79.48
-129.23
-124.10
-116.85
-112.20
-110.92
-112.59
-119.96
-125.82
-137.16
-141.77
-137.81
-139.90
-130.05
-118.58
-119.98
-114.42
-111.40
-106.18
-110.93
-116.90
-124.51
-135.28
-138.95
-144.20
-138.12
-131.35
-122.28
-113.53
-106.76
-107.93
-113.91
-119.65
-130.66
-140.07
-149.99
+87.95
+155.77
+157.89
+155.42
+144.41
+133.37
+123.83
+117.76
+114.48
+116.20
+121.76
+130.87
+143.14
+153.75
+155.86
+163.14
+156.75
+145.27
+135.06
+126.30
+120.57
+119.38
+122.49
+129.06
+137.39
+147.92
+156.99
+159.90
+154.55
+139.77
+136.14
+127.17
+121.48
+120.02
+121.24
+126.50
 
