@@ -1,0 +1,19 @@
+
+PerfFX gathers basic JavaFX application to perform performance tests (Marlin renderer + prism):
+
+* Requirements:
+    * OpenJDK 11+
+    * GraalVM Community Edition (CE) 19.3.1+
+    * Maven (gluon) plugin
+
+* Run JavaFX (jvm):
+    mvn javafx:run
+
+* Build native image:
+    mvn client:build
+
+* Run native image:
+    ./target/client/x86_64-linux/PerfFX
+
+Enjoy FOSS !
+

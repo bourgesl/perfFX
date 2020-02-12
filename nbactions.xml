@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+        <action>
+            <actionName>CUSTOM-client build</actionName>
+            <displayName>client build</displayName>
+            <goals>
+                <goal>client:build</goal>
+            </goals>
+            <properties>
+                <Env.JAVA_HOME>/home/bourgesl/apps/jdk-11.0.6+10/</Env.JAVA_HOME>
+                <Env.GRAALVM_HOME>/home/bourgesl/apps/graalvm-ce-java11-19.3.1/</Env.GRAALVM_HOME>
+            </properties>
+        </action>
+        <action>
+            <actionName>CUSTOM-run</actionName>
+            <displayName>run</displayName>
+            <goals>
+                <goal>javafx:run</goal>
+            </goals>
+            <properties>
+                <Env.JAVA_HOME>/home/bourgesl/apps/jdk-11.0.6+10/</Env.JAVA_HOME>
+            </properties>
+        </action>
+    </actions>
