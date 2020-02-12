@@ -1,0 +1,160 @@
+$ mvn javafx:run
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.google.inject.internal.cglib.core.$ReflectUtils$1 (file:/usr/share/maven/lib/guice.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of com.google.inject.internal.cglib.core.$ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------------< org.marlin:perfFX >--------------------------
+[INFO] Building PerfFX HEAD
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> javafx-maven-plugin:0.0.4:run (default-cli) > process-classes @ perfFX >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ perfFX ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ perfFX ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< javafx-maven-plugin:0.0.4:run (default-cli) < process-classes @ perfFX <<<
+[INFO] 
+[INFO] 
+[INFO] --- javafx-maven-plugin:0.0.4:run (default-cli) @ perfFX ---
+JavaFX launchApplication method: launchMode=LM_CLASS
+Prism pipeline init order: es2 sw 
+Using Double Precision Marlin Rasterizer
+Using dirty region optimizations
+Not using texture mask for primitives
+Not forcing power of 2 sizes for textures
+Using hardware CLAMP_TO_ZERO mode
+Opting in for HiDPI pixel scaling
+Prism pipeline name = com.sun.prism.es2.ES2Pipeline
+Loading ES2 native library ... prism_es2
+WARNING: java.lang.UnsatisfiedLinkError: Can't load library: /home/bourgesl/.m2/repository/org/openjfx/javafx-graphics/14-ea+7/libprism_es2.so
+Loaded library /libprism_es2.so from resource
+	succeeded.
+GLFactory using com.sun.prism.es2.X11GLFactory
+(X) Got class = class com.sun.prism.es2.ES2Pipeline
+Initialized prism pipeline: com.sun.prism.es2.ES2Pipeline
+JavaFX: using com.sun.javafx.tk.quantum.QuantumToolkit
+WARNING: java.lang.UnsatisfiedLinkError: Can't load library: /home/bourgesl/.m2/repository/org/openjfx/javafx-graphics/14-ea+7/libglass.so
+Loaded library /libglass.so from resource
+WARNING: java.lang.UnsatisfiedLinkError: Can't load library: /home/bourgesl/.m2/repository/org/openjfx/javafx-graphics/14-ea+7/libglassgtk3.so
+Loaded library /libglassgtk3.so from resource
+Maximum supported texture size: 16384
+Maximum texture size clamped to 4096
+Non power of two texture support = true
+Maximum number of vertex attributes = 16
+Maximum number of uniform vertex components = 4096
+Maximum number of uniform fragment components = 4096
+Maximum number of varying components = 124
+Maximum number of texture units usable in a vertex shader = 32
+Maximum number of texture units usable in a fragment shader = 32
+Graphics Vendor: NVIDIA Corporation
+       Renderer: Quadro M1000M/PCIe/SSE2
+        Version: 4.6.0 NVIDIA 440.59
+ vsync: false vpipe: true
+Calling main(String[]) method
+System properties:
+{sun.desktop=gnome, awt.toolkit=sun.awt.X11.XToolkit, java.specification.version=11, javafx.runtime.version=14-ea+7, prism.marlin.doStats=false, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, java.class.path=/home/marlin/branches/perfFX/target/classes, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, java.vendor.url=http://java.oracle.com/, user.timezone=, prism.verbose=true, prism.marlin.log=true, os.name=Linux, java.vm.specification.version=11, javafx.version=14-ea, sun.java.launcher=SUN_STANDARD, user.country=FR, sun.boot.library.path=/home/bourgesl/apps/openjdk-11+28_linux-x64_bin/lib, sun.java.command=test.TrianglePerformanceTest, jdk.debug=release, sun.cpu.endian=little, user.home=/home/bourgesl, user.language=fr, java.specification.vendor=Oracle Corporation, jdk.module.path=/home/bourgesl/.m2/repository/org/openjfx/javafx-base/14-ea+7/javafx-base-14-ea+7-linux.jar:/home/bourgesl/.m2/repository/org/openjfx/javafx-base/14-ea+7/javafx-base-14-ea+7.jar:/home/bourgesl/.m2/repository/org/openjfx/javafx-controls/14-ea+7/javafx-controls-14-ea+7-linux.jar:/home/bourgesl/.m2/repository/org/openjfx/javafx-controls/14-ea+7/javafx-controls-14-ea+7.jar:/home/bourgesl/.m2/repository/org/openjfx/javafx-graphics/14-ea+7/javafx-graphics-14-ea+7-linux.jar:/home/bourgesl/.m2/repository/org/openjfx/javafx-graphics/14-ea+7/javafx-graphics-14-ea+7.jar, java.version.date=2018-09-25, java.home=/home/bourgesl/apps/openjdk-11+28_linux-x64_bin, file.separator=/, java.vm.compressedOopsMode=Zero based, line.separator=
+, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, javafx.verbose=true, prism.marlin.useRef=hard, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=11+28, user.name=bourgesl, path.separator=:, os.version=4.15.0-76-generic, java.runtime.name=OpenJDK Runtime Environment, file.encoding=UTF-8, javafx.animation.fullspeed=true, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.version=18.9, java.vendor.url.bug=http://bugreport.java.com/bugreport/, java.io.tmpdir=/tmp, java.version=11, user.dir=/home/marlin/branches/perfFX, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.print.PSPrinterJob, sun.os.patch.level=unknown, java.library.path=/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib, java.vendor=Oracle Corporation, java.vm.info=mixed mode, java.vm.version=11+28, sun.io.unicode.encoding=UnicodeLittle, java.class.version=55.0}
+WARNING: java.lang.UnsatisfiedLinkError: Can't load library: /home/bourgesl/.m2/repository/org/openjfx/javafx-graphics/14-ea+7/libjavafx_font.so
+Loaded library /libjavafx_font.so from resource
+WARNING: java.lang.UnsatisfiedLinkError: Can't load library: /home/bourgesl/.m2/repository/org/openjfx/javafx-graphics/14-ea+7/libjavafx_font_freetype.so
+Loaded library /libjavafx_font_freetype.so from resource
+WARNING: java.lang.UnsatisfiedLinkError: Can't load library: /home/bourgesl/.m2/repository/org/openjfx/javafx-graphics/14-ea+7/libjavafx_font_pango.so
+Loaded library /libjavafx_font_pango.so from resource
+ES2ResourceFactory: Prism - createStockShader: FillPgram_Color.frag
+3,45
+ES2ResourceFactory: Prism - createStockShader: FillPgram_LinearGradient_PAD.frag
+ES2ResourceFactory: Prism - createStockShader: Solid_TextureRGB.frag
+ES2ResourceFactory: Prism - createStockShader: Solid_TextureFirstPassLCD.frag
+ES2ResourceFactory: Prism - createStockShader: Solid_TextureSecondPassLCD.frag
+INFO: ===============================================================================
+INFO: Marlin software rasterizer    = ENABLED
+INFO: Version                       = [marlinFX-0.9.3.1-Unsafe-OpenJDK]
+INFO: prism.marlin                  = com.sun.marlin.DRenderer
+INFO: prism.marlin.useThreadLocal   = true
+INFO: prism.marlin.useRef           = hard
+INFO: prism.marlin.edges            = 4096
+INFO: prism.marlin.pixelWidth       = 4096
+INFO: prism.marlin.pixelHeight      = 2176
+INFO: prism.marlin.profile          = quality
+INFO: prism.marlin.subPixel_log2_X  = 8
+INFO: prism.marlin.subPixel_log2_Y  = 3
+INFO: prism.marlin.blockSize_log2   = 5
+INFO: prism.marlin.forceRLE         = false
+INFO: prism.marlin.forceNoRLE       = false
+INFO: prism.marlin.useTileFlags     = true
+INFO: prism.marlin.useTileFlags.useHeuristics = true
+INFO: prism.marlin.rleMinWidth      = 64
+INFO: prism.marlin.useSimplifier    = false
+INFO: prism.marlin.usePathSimplifier= false
+INFO: prism.marlin.pathSimplifier.pixTol = 0.125
+INFO: prism.marlin.clip             = true
+INFO: prism.marlin.clip.runtime.enable = false
+INFO: prism.marlin.clip.subdivider  = true
+INFO: prism.marlin.clip.subdivider.minLength = 100.0
+INFO: prism.marlin.doStats          = false
+INFO: prism.marlin.doMonitors       = false
+INFO: prism.marlin.doChecks         = false
+INFO: prism.marlin.log              = true
+INFO: prism.marlin.useLogger        = false
+INFO: prism.marlin.logCreateContext = false
+INFO: prism.marlin.logUnsafeMalloc  = false
+INFO: prism.marlin.curve_len_err    = 0.01
+INFO: prism.marlin.cubic_dec_d2     = 1.0
+INFO: prism.marlin.cubic_inc_d1     = 0.2
+INFO: prism.marlin.quad_dec_d2      = 0.5
+INFO: Renderer settings:
+INFO: CUB_DEC_BND  = 256.0
+INFO: CUB_INC_BND  = 51.20000076293945
+INFO: QUAD_DEC_BND = 128.0
+INFO: INITIAL_EDGES_CAPACITY        = 98304
+INFO: INITIAL_CROSSING_COUNT        = 1024
+INFO: ===============================================================================
+new alphas with length = 4096
+ES2ResourceFactory: Prism - createStockShader: Texture_Color.frag
+ES2ResourceFactory: Prism - createStockShader: Texture_LinearGradient_PAD.frag
+50,00
+161,07
+194,81
+203,82
+222,11
+235,42
+254,46
+262,81
+251,09
+232,64
+221,12
+209,74
+203,12
+205,20
+206,22
+225,36
+233,07
+250,29
+265,52
+267,29
+253,02
+250,51
+234,47
+218,44
+200,26
+204,94
+204,51
+214,12
+220,65
+238,70
+251,08
+270,41
+263,73
+257,99
+234,59
+220,78
+207,29
+214,77
+
