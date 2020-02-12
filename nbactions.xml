@@ -21,4 +21,15 @@
                 <Env.JAVA_HOME>/home/bourgesl/apps/jdk-11.0.6+10/</Env.JAVA_HOME>
             </properties>
         </action>
+        <action>
+            <actionName>CUSTOM-client build 20.0</actionName>
+            <displayName>client build 20.0</displayName>
+            <goals>
+                <goal>client:build</goal>
+            </goals>
+            <properties>
+                <Env.JAVA_HOME>/home/bourgesl/apps/jdk-11.0.6+10/</Env.JAVA_HOME>
+                <Env.GRAALVM_HOME>/home/bourgesl/apps/graalvm-ce-java11-20.1.0-dev/</Env.GRAALVM_HOME>
+            </properties>
+        </action>
     </actions>

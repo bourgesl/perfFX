@@ -6,6 +6,10 @@ PerfFX gathers basic JavaFX application to perform performance tests (Marlin ren
     * GraalVM Community Edition (CE) 19.3.1+
     * Maven (gluon) plugin
 
+* Set environment:
+    JAVA_HOME=/home/bourgesl/apps/jdk-11.0.6+10/
+    GRAALVM_HOME=/home/bourgesl/apps/graalvm-ce-java11-19.3.1/
+
 * Run JavaFX (jvm):
     mvn javafx:run
 

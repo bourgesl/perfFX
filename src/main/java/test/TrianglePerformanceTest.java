@@ -389,19 +389,6 @@ public class TrianglePerformanceTest extends Application {
     }
 
     public static void main(String[] args) {
-
-        /*
-        Workaround to set system properties in GraalVM / Substrate VM (native images)
-         */
-        System.setProperty("javafx.verbose", "true");
-        System.setProperty("prism.verbose", "true");
-        System.setProperty("javafx.animation.fullspeed", "true");
-        
-        System.setProperty("prism.marlin.log", "true");
-        System.setProperty("prism.marlin.useRef", "hard"); // hard or soft (default) / weak references
-        
-        System.setProperty("prism.marlin.doStats", "false");
-
         for (int i = 0; i < args.length; i++) {
             String arg = args[i];
             if (arg.equalsIgnoreCase("-oneshape")) {
@@ -428,10 +415,6 @@ public class TrianglePerformanceTest extends Application {
                 }
             }
         }
-
-        System.out.println("System properties:\n" + System.getProperties());
-
         launch(args);
     }
-
 }

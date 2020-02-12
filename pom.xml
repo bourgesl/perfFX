@@ -24,7 +24,7 @@
         <java.version>11</java.version>
         <javafx.version>13.0.2</javafx.version>
 
-        <app.mainClass>test.TrianglePerformanceTest</app.mainClass>
+        <app.mainClass>test.Bootstrap</app.mainClass>
     </properties>
 
     <build>
@@ -62,11 +62,6 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.4</version>
                 <configuration>
-                    <options>
-                        <option>-Djavafx.verbose=true</option>
-                        <option>-Dprism.verbose=true</option>
-                        <option>-Djavafx.animation.fullspeed=true</option>
-                    </options>
                     <mainClass>${app.mainClass}</mainClass>
                 </configuration>
             </plugin>
@@ -77,8 +72,11 @@
                 <version>0.1.15</version>
                 <configuration>
                     <target>host</target>
+                    <reflectionList>
+                        test.TrianglePerformanceTest
+                    </reflectionList>
                     <!-- -H:+ReportExceptionStackTraces -H:+ParseRuntimeOptions -H:+PrintClassInitialization -->
-                    <nativeImageArgs>-Djavafx.verbose=true -Dprism.verbose=true -Djavafx.animation.fullspeed=true -H:+ParseRuntimeOptions</nativeImageArgs>
+                    <nativeImageArgs>-H:+ParseRuntimeOptions</nativeImageArgs>
                     <!-- Uncomment to run on iOS: -->
                     <!-- <target>ios</target>-->
                     <mainClass>${app.mainClass}</mainClass>
