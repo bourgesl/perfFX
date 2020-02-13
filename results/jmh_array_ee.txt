@@ -1,0 +1,341 @@
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.openjdk.jmh.util.Utils (file:/home/marlin/branches/perfFX/target/PerfFX-benchmarks.jar) to field java.io.Console.cs
+WARNING: Please consider reporting this to the maintainers of org.openjdk.jmh.util.Utils
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+# JMH version: 1.23
+# VM version: JDK 11.0.6, Java HotSpot(TM) 64-Bit Server VM, 11.0.6+1-LTS-jvmci-19.3-b07
+# VM invoker: /home/bourgesl/apps/graalvm-ee-java11-19.3.1//bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions
+# Warmup: 5 iterations, 2 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: org.sample.IntrinsicsArrayCopy_AverageTime.manual
+
+# Run progress: 0,00% complete, ETA 00:00:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 16332,002 ±(99.9%) 210,553 ns/op
+# Warmup Iteration   2: 16225,653 ±(99.9%) 363,579 ns/op
+# Warmup Iteration   3: 16272,230 ±(99.9%) 60,392 ns/op
+# Warmup Iteration   4: 16348,752 ±(99.9%) 61,773 ns/op
+# Warmup Iteration   5: 16405,267 ±(99.9%) 406,398 ns/op
+Iteration   1: 16321,689 ±(99.9%) 95,756 ns/op
+                 manual·p0.00:   15424,000 ns/op
+                 manual·p0.50:   15632,000 ns/op
+                 manual·p0.90:   16512,000 ns/op
+                 manual·p0.95:   16992,000 ns/op
+                 manual·p0.99:   34176,000 ns/op
+                 manual·p0.999:  49446,976 ns/op
+                 manual·p0.9999: 135952,448 ns/op
+                 manual·p1.00:   230144,000 ns/op
+
+Iteration   2: 16257,113 ±(99.9%) 276,844 ns/op
+                 manual·p0.00:   15408,000 ns/op
+                 manual·p0.50:   15616,000 ns/op
+                 manual·p0.90:   16480,000 ns/op
+                 manual·p0.95:   16928,000 ns/op
+                 manual·p0.99:   32522,240 ns/op
+                 manual·p0.999:  49307,648 ns/op
+                 manual·p0.9999: 672071,680 ns/op
+                 manual·p1.00:   1263616,000 ns/op
+
+Iteration   3: 16174,117 ±(99.9%) 74,235 ns/op
+                 manual·p0.00:   15408,000 ns/op
+                 manual·p0.50:   15616,000 ns/op
+                 manual·p0.90:   16512,000 ns/op
+                 manual·p0.95:   16960,000 ns/op
+                 manual·p0.99:   32269,760 ns/op
+                 manual·p0.999:  48923,520 ns/op
+                 manual·p0.9999: 62241,734 ns/op
+                 manual·p1.00:   69248,000 ns/op
+
+Iteration   4: 16357,296 ±(99.9%) 818,240 ns/op
+                 manual·p0.00:   15408,000 ns/op
+                 manual·p0.50:   15616,000 ns/op
+                 manual·p0.90:   16448,000 ns/op
+                 manual·p0.95:   16576,000 ns/op
+                 manual·p0.99:   32575,360 ns/op
+                 manual·p0.999:  49177,472 ns/op
+                 manual·p0.9999: 1805966,029 ns/op
+                 manual·p1.00:   3874816,000 ns/op
+
+Iteration   5: 16494,823 ±(99.9%) 780,015 ns/op
+                 manual·p0.00:   15408,000 ns/op
+                 manual·p0.50:   15600,000 ns/op
+                 manual·p0.90:   16512,000 ns/op
+                 manual·p0.95:   16800,000 ns/op
+                 manual·p0.99:   33856,000 ns/op
+                 manual·p0.999:  51140,864 ns/op
+                 manual·p0.9999: 1787736,832 ns/op
+                 manual·p1.00:   3649536,000 ns/op
+
+Iteration   6: 16265,846 ±(99.9%) 85,073 ns/op
+                 manual·p0.00:   15392,000 ns/op
+                 manual·p0.50:   15616,000 ns/op
+                 manual·p0.90:   16544,000 ns/op
+                 manual·p0.95:   16960,000 ns/op
+                 manual·p0.99:   34048,000 ns/op
+                 manual·p0.999:  49634,304 ns/op
+                 manual·p0.9999: 92832,922 ns/op
+                 manual·p1.00:   141056,000 ns/op
+
+Iteration   7: 16880,330 ±(99.9%) 175,282 ns/op
+                 manual·p0.00:   15600,000 ns/op
+                 manual·p0.50:   15856,000 ns/op
+                 manual·p0.90:   16736,000 ns/op
+                 manual·p0.95:   17088,000 ns/op
+                 manual·p0.99:   45007,360 ns/op
+                 manual·p0.999:  97596,416 ns/op
+                 manual·p0.9999: 191883,878 ns/op
+                 manual·p1.00:   206592,000 ns/op
+
+Iteration   8: 16370,509 ±(99.9%) 85,908 ns/op
+                 manual·p0.00:   15408,000 ns/op
+                 manual·p0.50:   15632,000 ns/op
+                 manual·p0.90:   16544,000 ns/op
+                 manual·p0.95:   16992,000 ns/op
+                 manual·p0.99:   34048,000 ns/op
+                 manual·p0.999:  49386,432 ns/op
+                 manual·p0.9999: 60043,622 ns/op
+                 manual·p1.00:   67968,000 ns/op
+
+Iteration   9: 16122,226 ±(99.9%) 87,876 ns/op
+                 manual·p0.00:   15344,000 ns/op
+                 manual·p0.50:   15616,000 ns/op
+                 manual·p0.90:   16448,000 ns/op
+                 manual·p0.95:   16576,000 ns/op
+                 manual·p0.99:   32600,000 ns/op
+                 manual·p0.999:  47928,000 ns/op
+                 manual·p0.9999: 136508,000 ns/op
+                 manual·p1.00:   246272,000 ns/op
+
+Iteration  10: 16303,885 ±(99.9%) 88,149 ns/op
+                 manual·p0.00:   15408,000 ns/op
+                 manual·p0.50:   15616,000 ns/op
+                 manual·p0.90:   16512,000 ns/op
+                 manual·p0.95:   16928,000 ns/op
+                 manual·p0.99:   34176,000 ns/op
+                 manual·p0.999:  49867,008 ns/op
+                 manual·p0.9999: 69316,813 ns/op
+                 manual·p1.00:   71552,000 ns/op
+
+
+
+Result "org.sample.IntrinsicsArrayCopy_AverageTime.manual":
+  N = 154629
+  mean =  16353,394 ±(99.9%) 120,066 ns/op
+
+  Histogram, ns/op:
+    [      0,000,  250000,000) = 154626 
+    [ 250000,000,  500000,000) = 0 
+    [ 500000,000,  750000,000) = 0 
+    [ 750000,000, 1000000,000) = 0 
+    [1000000,000, 1250000,000) = 0 
+    [1250000,000, 1500000,000) = 1 
+    [1500000,000, 1750000,000) = 0 
+    [1750000,000, 2000000,000) = 0 
+    [2000000,000, 2250000,000) = 0 
+    [2250000,000, 2500000,000) = 0 
+    [2500000,000, 2750000,000) = 0 
+    [2750000,000, 3000000,000) = 0 
+    [3000000,000, 3250000,000) = 0 
+    [3250000,000, 3500000,000) = 0 
+    [3500000,000, 3750000,000) = 1 
+
+  Percentiles, ns/op:
+      p(0,0000) =  15344,000 ns/op
+     p(50,0000) =  15632,000 ns/op
+     p(90,0000) =  16544,000 ns/op
+     p(95,0000) =  16928,000 ns/op
+     p(99,0000) =  33920,000 ns/op
+     p(99,9000) =  51567,360 ns/op
+     p(99,9900) = 146460,160 ns/op
+     p(99,9990) = 3751745,536 ns/op
+     p(99,9999) = 3874816,000 ns/op
+    p(100,0000) = 3874816,000 ns/op
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.6, Java HotSpot(TM) 64-Bit Server VM, 11.0.6+1-LTS-jvmci-19.3-b07
+# VM invoker: /home/bourgesl/apps/graalvm-ee-java11-19.3.1//bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions
+# Warmup: 5 iterations, 2 s each
+# Measurement: 10 iterations, 1 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: org.sample.IntrinsicsArrayCopy_AverageTime.system
+
+# Run progress: 50,00% complete, ETA 00:00:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 16215,602 ±(99.9%) 55,040 ns/op
+# Warmup Iteration   2: 16363,621 ±(99.9%) 74,620 ns/op
+# Warmup Iteration   3: 16578,447 ±(99.9%) 346,057 ns/op
+# Warmup Iteration   4: 16399,237 ±(99.9%) 72,313 ns/op
+# Warmup Iteration   5: 16850,862 ±(99.9%) 201,303 ns/op
+Iteration   1: 16278,659 ±(99.9%) 93,489 ns/op
+                 system·p0.00:   15360,000 ns/op
+                 system·p0.50:   15600,000 ns/op
+                 system·p0.90:   16448,000 ns/op
+                 system·p0.95:   16608,000 ns/op
+                 system·p0.99:   34304,000 ns/op
+                 system·p0.999:  50278,912 ns/op
+                 system·p0.9999: 97741,824 ns/op
+                 system·p1.00:   141568,000 ns/op
+
+Iteration   2: 16516,334 ±(99.9%) 111,397 ns/op
+                 system·p0.00:   15408,000 ns/op
+                 system·p0.50:   15616,000 ns/op
+                 system·p0.90:   16576,000 ns/op
+                 system·p0.95:   17120,000 ns/op
+                 system·p0.99:   34816,000 ns/op
+                 system·p0.999:  53216,640 ns/op
+                 system·p0.9999: 110325,299 ns/op
+                 system·p1.00:   121344,000 ns/op
+
+Iteration   3: 16598,961 ±(99.9%) 175,314 ns/op
+                 system·p0.00:   15456,000 ns/op
+                 system·p0.50:   15792,000 ns/op
+                 system·p0.90:   16512,000 ns/op
+                 system·p0.95:   16768,000 ns/op
+                 system·p0.99:   37411,200 ns/op
+                 system·p0.999:  93693,440 ns/op
+                 system·p0.9999: 260986,368 ns/op
+                 system·p1.00:   344064,000 ns/op
+
+Iteration   4: 16808,633 ±(99.9%) 183,940 ns/op
+                 system·p0.00:   15456,000 ns/op
+                 system·p0.50:   15792,000 ns/op
+                 system·p0.90:   16672,000 ns/op
+                 system·p0.95:   16832,000 ns/op
+                 system·p0.99:   45052,800 ns/op
+                 system·p0.999:  113913,600 ns/op
+                 system·p0.9999: 222337,920 ns/op
+                 system·p1.00:   256512,000 ns/op
+
+Iteration   5: 16832,916 ±(99.9%) 115,157 ns/op
+                 system·p0.00:   15472,000 ns/op
+                 system·p0.50:   15808,000 ns/op
+                 system·p0.90:   16704,000 ns/op
+                 system·p0.95:   17184,000 ns/op
+                 system·p0.99:   36993,280 ns/op
+                 system·p0.999:  91457,280 ns/op
+                 system·p0.9999: 174059,008 ns/op
+                 system·p1.00:   269824,000 ns/op
+
+Iteration   6: 16902,066 ±(99.9%) 194,538 ns/op
+                 system·p0.00:   15408,000 ns/op
+                 system·p0.50:   15808,000 ns/op
+                 system·p0.90:   16672,000 ns/op
+                 system·p0.95:   16800,000 ns/op
+                 system·p0.99:   45450,240 ns/op
+                 system·p0.999:  107129,856 ns/op
+                 system·p0.9999: 273017,242 ns/op
+                 system·p1.00:   305664,000 ns/op
+
+Iteration   7: 16250,571 ±(99.9%) 95,037 ns/op
+                 system·p0.00:   15392,000 ns/op
+                 system·p0.50:   15600,000 ns/op
+                 system·p0.90:   16544,000 ns/op
+                 system·p0.95:   16992,000 ns/op
+                 system·p0.99:   33624,320 ns/op
+                 system·p0.999:  50151,296 ns/op
+                 system·p0.9999: 152048,973 ns/op
+                 system·p1.00:   248320,000 ns/op
+
+Iteration   8: 16682,487 ±(99.9%) 114,055 ns/op
+                 system·p0.00:   15376,000 ns/op
+                 system·p0.50:   15616,000 ns/op
+                 system·p0.90:   16640,000 ns/op
+                 system·p0.95:   17152,000 ns/op
+                 system·p0.99:   36011,520 ns/op
+                 system·p0.999:  51794,944 ns/op
+                 system·p0.9999: 66869,299 ns/op
+                 system·p1.00:   68096,000 ns/op
+
+Iteration   9: 16740,566 ±(99.9%) 109,706 ns/op
+                 system·p0.00:   15472,000 ns/op
+                 system·p0.50:   15808,000 ns/op
+                 system·p0.90:   16640,000 ns/op
+                 system·p0.95:   16832,000 ns/op
+                 system·p0.99:   35072,000 ns/op
+                 system·p0.999:  85666,560 ns/op
+                 system·p0.9999: 154665,472 ns/op
+                 system·p1.00:   291840,000 ns/op
+
+Iteration  10: 16161,029 ±(99.9%) 96,557 ns/op
+                 system·p0.00:   15408,000 ns/op
+                 system·p0.50:   15600,000 ns/op
+                 system·p0.90:   16448,000 ns/op
+                 system·p0.95:   16544,000 ns/op
+                 system·p0.99:   33638,400 ns/op
+                 system·p0.999:  49565,440 ns/op
+                 system·p0.9999: 188604,928 ns/op
+                 system·p1.00:   245760,000 ns/op
+
+
+
+Result "org.sample.IntrinsicsArrayCopy_AverageTime.system":
+  N = 182424
+  mean =  16609,442 ±(99.9%) 42,102 ns/op
+
+  Histogram, ns/op:
+    [     0,000,  25000,000) = 176904 
+    [ 25000,000,  50000,000) = 4731 
+    [ 50000,000,  75000,000) = 465 
+    [ 75000,000, 100000,000) = 229 
+    [100000,000, 125000,000) = 42 
+    [125000,000, 150000,000) = 24 
+    [150000,000, 175000,000) = 13 
+    [175000,000, 200000,000) = 8 
+    [200000,000, 225000,000) = 0 
+    [225000,000, 250000,000) = 3 
+    [250000,000, 275000,000) = 2 
+    [275000,000, 300000,000) = 1 
+    [300000,000, 325000,000) = 1 
+    [325000,000, 350000,000) = 1 
+    [350000,000, 375000,000) = 0 
+
+  Percentiles, ns/op:
+      p(0,0000) =  15360,000 ns/op
+     p(50,0000) =  15760,000 ns/op
+     p(90,0000) =  16640,000 ns/op
+     p(95,0000) =  17024,000 ns/op
+     p(99,0000) =  35008,000 ns/op
+     p(99,9000) =  84608,000 ns/op
+     p(99,9900) = 173699,840 ns/op
+     p(99,9990) = 312412,800 ns/op
+     p(99,9999) = 344064,000 ns/op
+    p(100,0000) = 344064,000 ns/op
+
+
+# Run complete. Total time: 00:00:40
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                Mode     Cnt        Score     Error  Units
+IntrinsicsArrayCopy_AverageTime.manual                 sample  154629    16353,394 ± 120,066  ns/op
+IntrinsicsArrayCopy_AverageTime.manual:manual·p0.00    sample            15344,000            ns/op
+IntrinsicsArrayCopy_AverageTime.manual:manual·p0.50    sample            15632,000            ns/op
+IntrinsicsArrayCopy_AverageTime.manual:manual·p0.90    sample            16544,000            ns/op
+IntrinsicsArrayCopy_AverageTime.manual:manual·p0.95    sample            16928,000            ns/op
+IntrinsicsArrayCopy_AverageTime.manual:manual·p0.99    sample            33920,000            ns/op
+IntrinsicsArrayCopy_AverageTime.manual:manual·p0.999   sample            51567,360            ns/op
+IntrinsicsArrayCopy_AverageTime.manual:manual·p0.9999  sample           146460,160            ns/op
+IntrinsicsArrayCopy_AverageTime.manual:manual·p1.00    sample          3874816,000            ns/op
+IntrinsicsArrayCopy_AverageTime.system                 sample  182424    16609,442 ±  42,102  ns/op
+IntrinsicsArrayCopy_AverageTime.system:system·p0.00    sample            15360,000            ns/op
+IntrinsicsArrayCopy_AverageTime.system:system·p0.50    sample            15760,000            ns/op
+IntrinsicsArrayCopy_AverageTime.system:system·p0.90    sample            16640,000            ns/op
+IntrinsicsArrayCopy_AverageTime.system:system·p0.95    sample            17024,000            ns/op
+IntrinsicsArrayCopy_AverageTime.system:system·p0.99    sample            35008,000            ns/op
+IntrinsicsArrayCopy_AverageTime.system:system·p0.999   sample            84608,000            ns/op
+IntrinsicsArrayCopy_AverageTime.system:system·p0.9999  sample           173699,840            ns/op
+IntrinsicsArrayCopy_AverageTime.system:system·p1.00    sample           344064,000            ns/op
+

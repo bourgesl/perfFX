@@ -6,18 +6,40 @@ PerfFX gathers basic JavaFX application to perform performance tests (Marlin ren
     * GraalVM Community Edition (CE) 19.3.1+
     * Maven (gluon) plugin
 
+
 * Set environment:
     JAVA_HOME=/home/bourgesl/apps/jdk-11.0.6+10/
     GRAALVM_HOME=/home/bourgesl/apps/graalvm-ce-java11-19.3.1/
 
+    Just edit the script: 
+        vi env.sh 
+
+
 * Run JavaFX (jvm):
     mvn javafx:run
+
 
 * Build native image:
     mvn client:build
 
+
 * Run native image:
     ./target/client/x86_64-linux/PerfFX
 
+
+* Results:
+    https://github.com/bourgesl/perfFX/tree/master/results
+
+
+---
+
+* More fun: 
+    * Simple array copy benchmark (JMH):
+        from: https://github.com/oracle/graal/issues/963#issue-407371148
+
+        Run script: 
+            bench_array.sh
+
+---
 Enjoy FOSS !
 
