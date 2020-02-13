@@ -1,0 +1,39 @@
+JDK 11 vs GraalVM 19.3 (11):
+----------------------------
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+
+
+# VM version: JDK 11.0.6, OpenJDK 64-Bit Server VM, 11.0.6+10
+# VM invoker: /home/bourgesl/apps/jdk-11.0.6+10//bin/java
+# VM options: -Xms2g -Xmx2g -XX:+AlwaysPreTouch
+
+Benchmark                                               Mode     Cnt        Score    Error  Units
+IntrinsicsArrayCopy_SampleTime.manual:manual·p0.99    sample            28352,000           ns/op
+IntrinsicsArrayCopy_SampleTime.system:system·p0.99    sample            28352,000           ns/op
+
+
+
+# VM version: JDK 11.0.6, OpenJDK 64-Bit Server VM, 11.0.6+9-jvmci-19.3-b07
+# VM invoker: /home/bourgesl/apps/graalvm-ce-java11-19.3.1//bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions -Xms2g -Xmx2g -XX:+AlwaysPreTouch
+
+Benchmark                                               Mode     Cnt        Score     Error  Units
+IntrinsicsArrayCopy_SampleTime.manual:manual·p0.99    sample           248576,000            ns/op
+IntrinsicsArrayCopy_SampleTime.system:system·p0.99    sample            28160,000            ns/op
+
+
+
+# VM version: JDK 11.0.6, Java HotSpot(TM) 64-Bit Server VM, 11.0.6+1-LTS-jvmci-19.3-b07
+# VM invoker: /home/bourgesl/apps/graalvm-ee-java11-19.3.1//bin/java
+# VM options: -XX:+UnlockExperimentalVMOptions -XX:+EnableJVMCIProduct -XX:-UnlockExperimentalVMOptions -Xms2g -Xmx2g -XX:+AlwaysPreTouch
+
+Benchmark                                               Mode     Cnt       Score    Error  Units
+IntrinsicsArrayCopy_SampleTime.manual:manual·p0.99    sample           32096,000           ns/op
+IntrinsicsArrayCopy_SampleTime.system:system·p0.99    sample           29408,000           ns/op
+
